@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		861BD5A52565908300E17908 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861BD5A32565908300E17908 /* Main.storyboard */; };
 		861BD5A72565908400E17908 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 861BD5A62565908400E17908 /* Assets.xcassets */; };
 		861BD5AA2565908400E17908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861BD5A82565908400E17908 /* LaunchScreen.storyboard */; };
+		865B875825659428009281A4 /* SourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B875725659428009281A4 /* SourceModel.swift */; };
+		86CE2C4E2565A2BF0051A9C3 /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE2C4D2565A2BF0051A9C3 /* DialogViewController.swift */; };
+		86E2208A2565922900019A3B /* full_values.json in Resources */ = {isa = PBXBuildFile; fileRef = 86E220892565922900019A3B /* full_values.json */; };
+		86E2208D2565923100019A3B /* congratulations.json in Resources */ = {isa = PBXBuildFile; fileRef = 86E2208C2565923100019A3B /* congratulations.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		861BD5A62565908400E17908 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		861BD5A92565908400E17908 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		861BD5AB2565908400E17908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		865B875725659428009281A4 /* SourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModel.swift; sourceTree = "<group>"; };
+		86CE2C4D2565A2BF0051A9C3 /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
+		86E220892565922900019A3B /* full_values.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = full_values.json; sourceTree = "<group>"; };
+		86E2208C2565923100019A3B /* congratulations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = congratulations.json; sourceTree = "<group>"; };
 		9D128C01CD57DEBBE21D2099 /* Pods-FinancialElephant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialElephant.release.xcconfig"; path = "Target Support Files/Pods-FinancialElephant/Pods-FinancialElephant.release.xcconfig"; sourceTree = "<group>"; };
 		DA8BBED780ADED69DA691F26 /* Pods-FinancialElephant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialElephant.debug.xcconfig"; path = "Target Support Files/Pods-FinancialElephant/Pods-FinancialElephant.debug.xcconfig"; sourceTree = "<group>"; };
 		F4C0DB00C95B942D1FA977BB /* Pods_FinancialElephant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinancialElephant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,13 +81,57 @@
 			children = (
 				861BD59D2565908300E17908 /* AppDelegate.swift */,
 				861BD59F2565908300E17908 /* SceneDelegate.swift */,
-				861BD5A12565908300E17908 /* ViewController.swift */,
-				861BD5A32565908300E17908 /* Main.storyboard */,
-				861BD5A62565908400E17908 /* Assets.xcassets */,
+				865B875625659416009281A4 /* Models */,
+				86E2208F2565923D00019A3B /* Controllers */,
+				86E220912565924900019A3B /* Storyboards */,
 				861BD5A82565908400E17908 /* LaunchScreen.storyboard */,
 				861BD5AB2565908400E17908 /* Info.plist */,
+				86E220872565921600019A3B /* Resouces */,
 			);
 			path = FinancialElephant;
+			sourceTree = "<group>";
+		};
+		865B875625659416009281A4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				865B875725659428009281A4 /* SourceModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86E220872565921600019A3B /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				861BD5A62565908400E17908 /* Assets.xcassets */,
+				86E220882565921D00019A3B /* Json */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		86E220882565921D00019A3B /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				86E220892565922900019A3B /* full_values.json */,
+				86E2208C2565923100019A3B /* congratulations.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		86E2208F2565923D00019A3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				861BD5A12565908300E17908 /* ViewController.swift */,
+				86CE2C4D2565A2BF0051A9C3 /* DialogViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86E220912565924900019A3B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				861BD5A32565908300E17908 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		FB03B0AA9C3590C2315771D0 /* Pods */ = {
@@ -88,7 +140,6 @@
 				DA8BBED780ADED69DA691F26 /* Pods-FinancialElephant.debug.xcconfig */,
 				9D128C01CD57DEBBE21D2099 /* Pods-FinancialElephant.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,7 +203,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				861BD5AA2565908400E17908 /* LaunchScreen.storyboard in Resources */,
+				86E2208D2565923100019A3B /* congratulations.json in Resources */,
 				861BD5A72565908400E17908 /* Assets.xcassets in Resources */,
+				86E2208A2565922900019A3B /* full_values.json in Resources */,
 				861BD5A52565908300E17908 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +261,8 @@
 			files = (
 				861BD5A22565908300E17908 /* ViewController.swift in Sources */,
 				861BD59E2565908300E17908 /* AppDelegate.swift in Sources */,
+				86CE2C4E2565A2BF0051A9C3 /* DialogViewController.swift in Sources */,
+				865B875825659428009281A4 /* SourceModel.swift in Sources */,
 				861BD5A02565908300E17908 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
