@@ -52,6 +52,7 @@ class DialogViewController: BaseViewController {
         super.viewDidLayoutSubviews()
         baseVIew.applyCornerRadius(15.scaled)
         btnClose.applyCornerRadius(btnClose.bounds.height/2)
+        btnClose.layer.applySketchShadow()
     }
     
     @IBAction func closeAction() {
@@ -80,36 +81,34 @@ extension DialogViewController: UITableViewDelegate, UITableViewDataSource {
             switch indexPath.row {
             case 0:
                 cell.lblTitle.text = "revenue"
-                cell.toggle.isOn = model?.companies[0].isChoosed ?? true
+                cell.toggle.isOn = model?.attributeComparing.isRevenue ?? true
                 cell.switchAction = { isOn in
-                    self.model?.companies[0].isChoosed = isOn
+                    self.model?.attributeComparing.isRevenue = isOn
                 }
                 
             case 1:
                 cell.lblTitle.text = "paidusers"
-                cell.toggle.isOn = model?.companies[0].isChoosed ?? true
-                cell.switchAction = { isOn in
-                    self.model?.companies[0].isChoosed = isOn
+                cell.toggle.isOn = self.model?.attributeComparing.isPaidusers ?? true
+                cell.switchAction = { isOn in self.model?.attributeComparing.isPaidusers = isOn
                 }
             case 2:
                 cell.lblTitle.text = "mau"
-                cell.toggle.isOn = model?.companies[0].isChoosed ?? true
+                cell.toggle.isOn = model?.attributeComparing.isMau ?? true
                 cell.switchAction = { isOn in
-                    self.model?.companies[0].isChoosed = isOn
+                    self.model?.attributeComparing.isMau = isOn
                 }
             case 3:
                 cell.lblTitle.text = "urr"
-                cell.toggle.isOn = model?.companies[0].isChoosed ?? true
+                cell.toggle.isOn = model?.attributeComparing.isUrr ?? true
                 cell.switchAction = { isOn in
-                    self.model?.companies[0].isChoosed = isOn
+                    self.model?.attributeComparing.isUrr = isOn
                 }
             case 4:
                 cell.lblTitle.text = "test"
-                cell.toggle.isOn = model?.companies[0].isChoosed ?? true
+                cell.toggle.isOn = model?.attributeComparing.isTest ?? true
                 cell.switchAction = { isOn in
-                    self.model?.companies[0].isChoosed = isOn
+                    self.model?.attributeComparing.isTest = isOn
                 }
-                
             default:
                 break
             }

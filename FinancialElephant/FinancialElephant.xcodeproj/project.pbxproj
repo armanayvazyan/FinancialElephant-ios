@@ -16,6 +16,9 @@
 		861BD5AA2565908400E17908 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 861BD5A82565908400E17908 /* LaunchScreen.storyboard */; };
 		865B875825659428009281A4 /* SourceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 865B875725659428009281A4 /* SourceModel.swift */; };
 		86CE2C4E2565A2BF0051A9C3 /* DialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE2C4D2565A2BF0051A9C3 /* DialogViewController.swift */; };
+		86CE2C582565BBD30051A9C3 /* ComparingItemsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE2C572565BBD30051A9C3 /* ComparingItemsController.swift */; };
+		86CE2C7B2565C17C0051A9C3 /* PagingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE2C7A2565C17C0051A9C3 /* PagingLayout.swift */; };
+		86CE2C852565F9B20051A9C3 /* CongratsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE2C842565F9B20051A9C3 /* CongratsVC.swift */; };
 		86E2208A2565922900019A3B /* full_values.json in Resources */ = {isa = PBXBuildFile; fileRef = 86E220892565922900019A3B /* full_values.json */; };
 		86E2208D2565923100019A3B /* congratulations.json in Resources */ = {isa = PBXBuildFile; fileRef = 86E2208C2565923100019A3B /* congratulations.json */; };
 /* End PBXBuildFile section */
@@ -31,6 +34,9 @@
 		861BD5AB2565908400E17908 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		865B875725659428009281A4 /* SourceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceModel.swift; sourceTree = "<group>"; };
 		86CE2C4D2565A2BF0051A9C3 /* DialogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogViewController.swift; sourceTree = "<group>"; };
+		86CE2C572565BBD30051A9C3 /* ComparingItemsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparingItemsController.swift; sourceTree = "<group>"; };
+		86CE2C7A2565C17C0051A9C3 /* PagingLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingLayout.swift; sourceTree = "<group>"; };
+		86CE2C842565F9B20051A9C3 /* CongratsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsVC.swift; sourceTree = "<group>"; };
 		86E220892565922900019A3B /* full_values.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = full_values.json; sourceTree = "<group>"; };
 		86E2208C2565923100019A3B /* congratulations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = congratulations.json; sourceTree = "<group>"; };
 		9D128C01CD57DEBBE21D2099 /* Pods-FinancialElephant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialElephant.release.xcconfig"; path = "Target Support Files/Pods-FinancialElephant/Pods-FinancialElephant.release.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		86E220872565921600019A3B /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				86CE2C7A2565C17C0051A9C3 /* PagingLayout.swift */,
 				861BD5A62565908400E17908 /* Assets.xcassets */,
 				86E220882565921D00019A3B /* Json */,
 			);
@@ -122,6 +129,8 @@
 			children = (
 				861BD5A12565908300E17908 /* ViewController.swift */,
 				86CE2C4D2565A2BF0051A9C3 /* DialogViewController.swift */,
+				86CE2C572565BBD30051A9C3 /* ComparingItemsController.swift */,
+				86CE2C842565F9B20051A9C3 /* CongratsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -259,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86CE2C7B2565C17C0051A9C3 /* PagingLayout.swift in Sources */,
 				861BD5A22565908300E17908 /* ViewController.swift in Sources */,
 				861BD59E2565908300E17908 /* AppDelegate.swift in Sources */,
 				86CE2C4E2565A2BF0051A9C3 /* DialogViewController.swift in Sources */,
+				86CE2C582565BBD30051A9C3 /* ComparingItemsController.swift in Sources */,
+				86CE2C852565F9B20051A9C3 /* CongratsVC.swift in Sources */,
 				865B875825659428009281A4 /* SourceModel.swift in Sources */,
 				861BD5A02565908300E17908 /* SceneDelegate.swift in Sources */,
 			);

@@ -19,7 +19,6 @@ class BaseViewController: UIViewController {
 
 
 class ViewController: BaseViewController {
-
     @IBOutlet weak var btnChooseAttributes: UIButton!
     @IBOutlet weak var btnChooseCompany: UIButton!
     @IBOutlet weak var btnStartCount: UIButton!
@@ -29,6 +28,17 @@ class ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         readData()
+        navigationController?.navigationBar.tintColor = UIColor(named: "buttonColor")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+
     }
     
     override func viewDidLayoutSubviews() {
@@ -57,7 +67,9 @@ class ViewController: BaseViewController {
     }
     
     @IBAction func startAction() {
-        
+        let vc = instantiateController(withIdentifier: ComparingItemsController.id) as! ComparingItemsController
+        vc.model = self.model
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     
