@@ -80,34 +80,34 @@ extension DialogViewController: UITableViewDelegate, UITableViewDataSource {
         case .attributes:
             switch indexPath.row {
             case 0:
-                cell.lblTitle.text = "revenue"
+                cell.lblTitle.text = "Revenue"
                 cell.toggle.isOn = model?.attributeComparing.isRevenue ?? true
                 cell.switchAction = { isOn in
                     self.model?.attributeComparing.isRevenue = isOn
                 }
                 
             case 1:
-                cell.lblTitle.text = "paidusers"
-                cell.toggle.isOn = self.model?.attributeComparing.isPaidusers ?? true
-                cell.switchAction = { isOn in self.model?.attributeComparing.isPaidusers = isOn
+                cell.lblTitle.text = "Paid Users"
+                cell.toggle.isOn = self.model?.attributeComparing.isPaid_Users ?? true
+                cell.switchAction = { isOn in self.model?.attributeComparing.isPaid_Users = isOn
                 }
             case 2:
-                cell.lblTitle.text = "mau"
-                cell.toggle.isOn = model?.attributeComparing.isMau ?? true
+                cell.lblTitle.text = "MAU"
+                cell.toggle.isOn = model?.attributeComparing.isMAU ?? true
                 cell.switchAction = { isOn in
-                    self.model?.attributeComparing.isMau = isOn
+                    self.model?.attributeComparing.isMAU = isOn
                 }
             case 3:
-                cell.lblTitle.text = "urr"
-                cell.toggle.isOn = model?.attributeComparing.isUrr ?? true
+                cell.lblTitle.text = "Retention rate"
+                cell.toggle.isOn = model?.attributeComparing.isRetention_Rate ?? true
                 cell.switchAction = { isOn in
-                    self.model?.attributeComparing.isUrr = isOn
+                    self.model?.attributeComparing.isRetention_Rate = isOn
                 }
             case 4:
-                cell.lblTitle.text = "test"
-                cell.toggle.isOn = model?.attributeComparing.isTest ?? true
+                cell.lblTitle.text = "Target Market"
+                cell.toggle.isOn = model?.attributeComparing.isTarget_Market ?? true
                 cell.switchAction = { isOn in
-                    self.model?.attributeComparing.isTest = isOn
+                    self.model?.attributeComparing.isTarget_Market = isOn
                 }
             default:
                 break

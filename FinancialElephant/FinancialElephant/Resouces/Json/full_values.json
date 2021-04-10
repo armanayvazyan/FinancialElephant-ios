@@ -3,36 +3,36 @@
     {
       "name": "Picsart",
       "imgUrl": "picsart",
-      "revenue": 100,
-      "paidusers": 700,
-      "mau": 1,
-      "urr": 10,
-      "test": 40
+      "Revenue": 100,
+      "Paid_Users": 700,
+      "MAU": 1,
+      "Retention_Rate": 10,
+      "Target_Market": 40
     },
     {
       "name": "VSCO",
       "imgUrl": "vsco",
-      "revenue": 220,
-      "paidusers": 1200,
-      "mau": 20,
-      "urr": 20,
-      "test": 30
+      "Revenue": 220,
+      "Paid_Users": 1200,
+      "MAU": 20,
+      "Retention_Rate": 20,
+      "Target_Market": 3
     },
     {
       "name": "LightTricks",
       "imgUrl": "lighttricks",
-      "revenue": 300,
-      "paidusers": 300,
-      "mau": 13,
-      "urr": 30,
-      "test": 10
+      "Revenue": 300,
+      "Paid_Users": 300,
+      "MAU": 13,
+      "Retention_Rate": 30,
+      "Target_Market": 10
     }
   ],
   "attribute_comparing": {
-    "revenue": 1,
-    "paidusers": 3,
-    "mau": 2,
-    "urr": 3,
-    "test": 4
+    "Revenue": 1,
+    "Paid_Users": 3,
+    "MAU": 2,
+    "Retention_Rate": 3,
+    "Target_Market": 4
   }
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jpC-C2-Hm6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jpC-C2-Hm6">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17502"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -290,8 +290,8 @@
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zyH-6V-FEv" customClass="AttributeView" customModule="FinancialElephant" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="0.0" width="262" height="55"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="revenue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUb-KV-XG9">
-                                                                            <rect key="frame" x="94.5" y="5" width="73" height="20"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revenue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUb-KV-XG9">
+                                                                            <rect key="frame" x="92" y="5" width="78" height="20"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="20" id="SQJ-Xq-6j7"/>
                                                                             </constraints>
@@ -325,8 +325,8 @@
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9e-6C-8Np" customClass="AttributeView" customModule="FinancialElephant" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="55" width="262" height="55"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paidusers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0k-Tc-4Ra">
-                                                                            <rect key="frame" x="86.5" y="5" width="89.5" height="20"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid Users" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0k-Tc-4Ra">
+                                                                            <rect key="frame" x="83" y="5" width="96.5" height="20"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="20" id="eLs-pp-XzL"/>
                                                                             </constraints>
@@ -359,8 +359,8 @@
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3gU-CI-zdr" customClass="AttributeView" customModule="FinancialElephant" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="110" width="262" height="55"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mau" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PR-Jl-Azg">
-                                                                            <rect key="frame" x="111.5" y="5" width="39.5" height="20"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PR-Jl-Azg">
+                                                                            <rect key="frame" x="109" y="5" width="44" height="20"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="20" id="ekw-5i-n2I"/>
                                                                             </constraints>
@@ -394,8 +394,8 @@
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLI-55-Lwh" customClass="AttributeView" customModule="FinancialElephant" customModuleProvider="target">
                                                                     <rect key="frame" x="0.0" y="165" width="262" height="55"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="urr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2G-tE-yCd">
-                                                                            <rect key="frame" x="117.5" y="5" width="27" height="20"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Retention Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2G-tE-yCd">
+                                                                            <rect key="frame" x="64.5" y="5" width="133.5" height="20"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="20" id="Xb3-6v-8i7"/>
                                                                             </constraints>
@@ -554,9 +554,6 @@
                                 <color key="textColor" name="buttonColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picsart" translatesAutoresizingMaskIntoConstraints="NO" id="y42-ff-rhg">
-                                <rect key="frame" x="50" y="195" width="275" height="231"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qv7-p4-23n">
                                 <rect key="frame" x="60" y="582" width="255" height="45"/>
                                 <color key="backgroundColor" name="buttonColor"/>
@@ -591,15 +588,11 @@
                             <constraint firstItem="0K8-TO-PXJ" firstAttribute="centerX" secondItem="Iu0-rN-ftr" secondAttribute="centerX" id="UG0-xR-DfD"/>
                             <constraint firstItem="8fu-Ip-yBU" firstAttribute="bottom" secondItem="qv7-p4-23n" secondAttribute="bottom" constant="40" id="UaZ-Sj-M8H"/>
                             <constraint firstItem="Iu0-rN-ftr" firstAttribute="top" secondItem="8fu-Ip-yBU" secondAttribute="top" constant="150" id="Wte-Sn-32M"/>
-                            <constraint firstItem="y42-ff-rhg" firstAttribute="leading" secondItem="5vJ-P5-GG9" secondAttribute="leading" constant="50" id="ZbM-fB-1cK"/>
-                            <constraint firstItem="y42-ff-rhg" firstAttribute="top" secondItem="Iu0-rN-ftr" secondAttribute="bottom" constant="10" id="kya-vO-yLT"/>
                             <constraint firstItem="Iu0-rN-ftr" firstAttribute="centerX" secondItem="5vJ-P5-GG9" secondAttribute="centerX" id="oZW-gG-7ve"/>
-                            <constraint firstItem="y42-ff-rhg" firstAttribute="centerX" secondItem="5vJ-P5-GG9" secondAttribute="centerX" id="omn-Mo-phe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btnBack" destination="qv7-p4-23n" id="aZa-sg-cqs"/>
-                        <outlet property="imgWiner" destination="y42-ff-rhg" id="ZmZ-iV-ORs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mup-lV-fbM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -609,7 +602,6 @@
     </scenes>
     <resources>
         <image name="appstore" width="1542" height="1416"/>
-        <image name="picsart" width="700" height="231"/>
         <image name="vsco" width="508" height="200"/>
         <namedColor name="CardColor">
             <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

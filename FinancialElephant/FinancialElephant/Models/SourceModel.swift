@@ -9,11 +9,11 @@ import Foundation
 
 class Source: Codable {
     enum AttributeName {
-        case revenue
-        case paidusers
-        case mau
-        case urr
-        case test
+        case Revenue
+        case Paid_Users
+        case MAU
+        case Retention_Rate
+        case Target_Market
     }
     
     let companies: [Company]
@@ -161,38 +161,38 @@ class Source: Codable {
 
 // MARK: - AttributeComparing
 class AttributeComparing: Codable {
-    let revenue, paidusers, mau, urr: Int
-    let test: Int
+    let Revenue, Paid_Users, MAU, Retention_Rate: Int
+    let Target_Market: Int
     
-    var isRevenue, isPaidusers, isMau, isUrr, isTest: Bool?
+    var isRevenue, isPaid_Users, isMAU, isRetention_Rate, isTarget_Market: Bool?
     
     func getActiveAttributeNames() -> [Source.AttributeName] {
         var arr = [Source.AttributeName]()
         if isRevenue ?? true {
-            arr.append(.revenue)
+            arr.append(.Revenue)
         }
-        if isPaidusers ?? true {
-            arr.append(.paidusers)
+        if isPaid_Users ?? true {
+            arr.append(.Paid_Users)
         }
-        if isMau ?? true {
-            arr.append(.mau)
+        if isMAU ?? true {
+            arr.append(.MAU)
         }
-        if isUrr ?? true {
-            arr.append(.urr)
+        if isRetention_Rate ?? true {
+            arr.append(.Retention_Rate)
         }
-        if isTest ?? true {
-            arr.append(.test)
+        if isTarget_Market ?? true {
+            arr.append(.Target_Market)
         }
         return arr
     }
     
     func getAttrubiteNamed(_ attributeName: Source.AttributeName) -> Int {
         switch attributeName {
-        case .mau: return mau
-        case .paidusers: return paidusers
-        case .revenue: return revenue
-        case .test: return test
-        case .urr: return urr
+        case .MAU: return MAU
+        case .Paid_Users: return Paid_Users
+        case .Revenue: return Revenue
+        case .Target_Market: return Target_Market
+        case .Retention_Rate: return Retention_Rate
         }
     }
     
@@ -202,24 +202,24 @@ class AttributeComparing: Codable {
 // MARK: - Company
 class Company: Codable {
     let name, imgURL: String
-    let revenue, paidusers, mau, urr: Int
-    let test: Int
+    let Revenue, Paid_Users, MAU, Retention_Rate: Int
+    let Target_Market: Int
     var isChoosed: Bool?
     
     func getAttrubiteNamed(_ attributeName: Source.AttributeName) -> Int {
         switch attributeName {
-        case .mau: return mau
-        case .paidusers: return paidusers
-        case .revenue: return revenue
-        case .test: return test
-        case .urr: return urr
+        case .MAU: return MAU
+        case .Paid_Users: return Paid_Users
+        case .Revenue: return Revenue
+        case .Target_Market: return Target_Market
+        case .Retention_Rate: return Retention_Rate
         }
     }
     
     enum CodingKeys: String, CodingKey {
         case name
         case imgURL = "imgUrl"
-        case revenue, paidusers, mau, urr, test
+        case Revenue, Paid_Users, MAU, Retention_Rate, Target_Market
         case isChoosed
     }
 }

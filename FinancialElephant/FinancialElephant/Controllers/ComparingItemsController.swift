@@ -100,16 +100,19 @@ class CompareCell: UICollectionViewCell {
     
     func configureWith(_ attributes: AttributeComparing, model: Company) {
         revenueAttView.isHidden = !(attributes.isRevenue ?? true)
-        revenueAttView.lblValue.text = model.revenue.description
-        paidusAttView.isHidden = !(attributes.isPaidusers ?? true)
+        revenueAttView.lblValue.text = model.Revenue.description
         
-        paidusAttView.lblValue.text = model.paidusers.description
-        mauAttView.isHidden = !(attributes.isMau ?? true)
-        mauAttView.lblValue.text = model.mau.description
-        urrAttView.isHidden = !(attributes.isUrr ?? true)
-        urrAttView.lblValue.text = model.urr.description
-        testAttView.isHidden = !(attributes.isTest ?? true)
-        testAttView.lblValue.text = model.test.description
+        paidusAttView.isHidden = !(attributes.isPaid_Users ?? true)
+        paidusAttView.lblValue.text = model.Paid_Users.description
+        
+        mauAttView.isHidden = !(attributes.isMAU ?? true)
+        mauAttView.lblValue.text = model.MAU.description
+        
+        urrAttView.isHidden = !(attributes.isRetention_Rate ?? true)
+        urrAttView.lblValue.text = model.Retention_Rate.description
+        
+        testAttView.isHidden = !(attributes.isTarget_Market ?? true)
+        testAttView.lblValue.text = model.Target_Market.description
         
         
     }
